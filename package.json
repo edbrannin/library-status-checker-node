@@ -1,0 +1,9 @@
+{
+  "name": "library-status-checker",
+  "version": "1.0.0",
+  "description": "Check when my library books are due",
+  "main": "index.js",
+  "repository": "git@github.com:edbrannin/library-status-checker-node.git",
+  "author": "Ed Brannin <edbrannin@gmail.com>",
+  "license": "MIT"
+}
