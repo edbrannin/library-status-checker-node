@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:edbrannin/library-status-checker-node.git",
   "author": "Ed Brannin <edbrannin@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^0.11.0"
+  }
 }
