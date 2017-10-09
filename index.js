@@ -1,3 +1,5 @@
+const util = require('util')
+
 const puppeteer = require('puppeteer');
 
 const loadConfig = async () => {
@@ -40,6 +42,9 @@ const getAccountInfo = async (number, lastName) => {
           return;
         }
       }
+      if (response.headers['content-type'].startsWith('image/')) {
+        return;
+      }
       console.log();
       console.log("==========");
       console.log(`Got response from ${url}`);
@@ -50,7 +55,7 @@ const getAccountInfo = async (number, lastName) => {
           console.log(await response.text());
         }
         console.log("JSON");
-        console.log(await response.json());
+        console.log(util.inspect(await response.json(), {depth: null }));
       } catch (e) {
         console.error(`Error trying to log JSON from ${url}`, e);
       }
