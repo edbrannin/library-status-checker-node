@@ -7,6 +7,7 @@
   "author": "Ed Brannin <edbrannin@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "ascii-table": "^0.0.9",
     "puppeteer": "^0.11.0"
   }
 }
